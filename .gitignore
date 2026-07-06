@@ -1,0 +1,85 @@
+# ===== Environment & secrets =====
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*-sa*.json
+service-account*.json
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.python-version
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.tox/
+
+# ===== Testing & coverage =====
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+frontend/coverage/
+frontend/playwright-report/
+frontend/test-results/
+
+# ===== Node / Next.js =====
+node_modules/
+frontend/.next/
+frontend/out/
+.pnpm-store/
+npm-debug.log*
+yarn-error.log*
+
+# ===== Docker =====
+docker-compose.override.yml
+*.pid
+
+# ===== Terraform =====
+infra/.terraform/
+infra/.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+tfplan
+
+# ===== ML artifacts & data =====
+ml/artifacts/
+*.xgb
+*.joblib
+*.parquet
+data/
+!backend/tests/fixtures/**
+!pipelines/tests/fixtures/**
+
+# ===== IDE =====
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== macOS =====
+.DS_Store
+.AppleDouble
+._*
+
+# ===== Windows =====
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ===== Logs & cache =====
+*.log
+logs/
+.cache/
+tmp/
